@@ -1,31 +1,18 @@
-setInterval(() => {
-  let create_time = Math.round(new Date('2020-12-16 00:00:00').getTime() / 1000); //在此行修改建站时间
-  let timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
-  let second = timestamp - create_time;
-  let time = new Array(0, 0, 0, 0, 0);
-
-  var nol = function(h){
-    return h>9?h:'0'+h;
-  }
-  if (second >= 365 * 24 * 3600) {
-    time[0] = parseInt(second / (365 * 24 * 3600));
-    second %= 365 * 24 * 3600;
-  }
-  if (second >= 24 * 3600) {
-    time[1] = parseInt(second / (24 * 3600));
-    second %= 24 * 3600;
-  }
-  if (second >= 3600) {
-    time[2] = nol(parseInt(second / 3600));
-    second %= 3600;
-  }
-  if (second >= 60) {
-    time[3] = nol(parseInt(second / 60));
-    second %= 60;
-  }
-  if (second > 0) {
-    time[4] = nol(second);
-  }
-  currentTimeHtml = time[0] + ' YEAR ' + time[1] + ' DAYS ' + time[2] + ' : ' + time[3] + ' : ' + time[4] ;
-  document.getElementById("runtime").innerHTML = currentTimeHtml;
-}, 1000);
+$(function(){
+  var NY = Math.round((new Date('4/17/2019 00:00:00')).getTime()/1000); //Date修改为你的建站时间。
+  $('#runtime').flipcountdown({
+    size:"xs",//可以自定义翻页计时器大小。从大到小依次是lg、md、sm、xs。
+    tick:function(){
+      var nol = function(h){
+        return h>9?h:'0'+h;
+      }
+      var	range  	= Math.abs(Math.round((new Date()).getTime()/1000)-NY),
+        secday = 86400, sechour = 3600,
+        days 	= parseInt(range/secday),
+        hours	= parseInt((range%secday)/sechour),
+        min		= parseInt(((range%secday)%sechour)/60),
+        sec		= ((range%secday)%sechour)%60;
+      return nol(days)+' '+nol(hours)+' '+nol(min)+' '+nol(sec);
+    }
+  });
+});
