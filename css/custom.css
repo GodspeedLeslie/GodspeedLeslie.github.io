@@ -1,6 +1,6 @@
 @font-face{
-  font-family:'Candyhome' ;  /* 字体名自定义即可 */
-  src:url('/fonts/Candy.ttf'); /* 字体文件路径 */
+  font-family:'Candyhome' ;  
+  src:url('/fonts/Candy.ttf'); 
   font-display : swap;
 }
 
