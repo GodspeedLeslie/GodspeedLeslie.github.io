@@ -1,7 +1,7 @@
 @font-face{
   font-family:'Candyhome' ;  
   src:url('/fonts/Candy.ttf'); 
-  font-display : swap;
+  font-display : auto;
 }
 
 h1#site-title {
