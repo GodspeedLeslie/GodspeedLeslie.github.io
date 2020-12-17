@@ -1,6 +1,6 @@
 setInterval(() => {
   let create_time = Math.round(new Date('2020-12-16 00:00:00').getTime() / 1000); //在此行修改建站时间
-  let timestamp = Math.round((new Date().getTime()) / 1000);
+  let timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
   let second = timestamp - create_time;
   let time = new Array(0, 0, 0, 0, 0);
 
