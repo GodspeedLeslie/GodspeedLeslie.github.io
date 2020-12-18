@@ -22,14 +22,12 @@ div#menus {
 div#post-info {
   font-family: 'Candyhome';
 }
-}
-/*Lete个人博客颜色修改*/
 
-#page-header #site_title {
-    color: #00CED1;
+{
+    background: transparent;
 }
+
 /*页脚a标签字体颜色*/
-
 #footer-wrap a {
     color: #00CED1;
 }
