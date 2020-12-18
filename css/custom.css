@@ -6,6 +6,12 @@
 div#body-wrap {
   font-family: 'Candyhome', sans-serif;
 }
+div#card-content {
+  font-family: 'Candyhome', sans-serif;
+}
+a#site-name {
+  font-family: 'Candyhome', sans-serif;
+}
 {
     background: transparent;
 }
