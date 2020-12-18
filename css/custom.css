@@ -68,3 +68,6 @@ div#post-info {
     color: #fff;
     background-color: #e58a8a;
 }
+#loading-box.loaded .wizard-scene{
+  display: none;
+}
