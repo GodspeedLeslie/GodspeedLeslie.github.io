@@ -3,7 +3,9 @@
   src:url('/fonts/Candyhome.ttf'); 
   font-display : auto;
 }
-
+div#body-wrap {
+  font-family: 'Candyhome', sans-serif;
+}
 {
     background: transparent;
 }
