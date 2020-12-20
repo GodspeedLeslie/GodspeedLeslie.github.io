@@ -7,7 +7,21 @@ div#body-wrap {
   font-family: 'Candyhome', sans-serif;
 }
 
-
+div#aside_content .author-info__description {
+  font-family: 'Candyhome', sans-serif;
+}
+div#aside_content .author-info__name {
+  font-family: 'Candyhome', sans-serif;
+}
+div#site-name {
+  font-family: 'Candyhome', sans-serif;
+}
+div#site-subtitle {
+  font-family: 'Candyhome', sans-serif;
+}
+div#site-title {
+  font-family: 'Candyhome', sans-serif;
+} 
 
 
 {
