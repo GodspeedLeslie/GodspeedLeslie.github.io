@@ -13,7 +13,17 @@ div#aside_content {
   font-family: 'Candyhome', sans-serif;
 }
 
+div#aside_content {
+  font-family: 'Candyhome', sans-serif;
+}
 
+div#author-info__name {
+  font-family: 'Candyhome', sans-serif;
+}
+
+div#author-info__description {
+  font-family: 'Candyhome', sans-serif;
+}
 
 {
     background: transparent;
